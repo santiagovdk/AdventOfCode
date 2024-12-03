@@ -1,12 +1,15 @@
 import io
 from pathlib import Path
 import typing as t
+import sys
+
+# Number of elements + 3
+sys.setrecursionlimit(1003)
 
 SEPARATOR = "   "
 
 
 def pop_smallest_number(numbers: t.List[int]) -> int:
-    numbers.sort()
     return numbers.pop(0)
 
 
@@ -34,7 +37,17 @@ def get_total_distance_between_lists(
     return get_total_distance_between_lists(left_list, right_list, result)
 
 
-def __main__():
-    input_data = []
-    with io.open(Path("./day-1-input.txt")) as fd:
-        input_data.append(parse_data_line(fd.readline()))
+if __name__ == "__main__":
+    left_list: t.List[int] = []
+    right_list: t.List[int] = []
+    file = Path(__file__).with_name("day_1_input.txt")
+    with file.open("r") as fd:
+        for line in fd:
+            parsed_line = parse_data_line(line)
+            left_list.append(parsed_line[0])
+            right_list.append(parsed_line[1])
+
+    left_list.sort()
+    right_list.sort()
+    print(get_total_distance_between_lists(left_list, right_list))
+    # Answer: 1879048

@@ -1,6 +1,6 @@
 import unittest
 
-from AdventOfCode.day_1.main import (
+from AdventOfCode.day_1.part_1 import (
     parse_data_line,
     get_distance_between_first_numbers,
     get_total_distance_between_lists,

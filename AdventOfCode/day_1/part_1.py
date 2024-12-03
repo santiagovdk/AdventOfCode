@@ -34,7 +34,7 @@ def get_total_distance_between_lists(
 if __name__ == "__main__":
     left_list: t.List[int] = []
     right_list: t.List[int] = []
-    file = Path("../data_input.txt")
+    file = Path("data_input.txt")
     with file.open("r") as fd:
         for line in fd:
             parsed_line = parse_data_line(line)

@@ -1,4 +1,4 @@
-import io
+import tracemalloc
 from pathlib import Path
 import typing as t
 import sys
@@ -38,6 +38,8 @@ def get_total_distance_between_lists(
 
 
 if __name__ == "__main__":
+    tracemalloc.start()
+
     left_list: t.List[int] = []
     right_list: t.List[int] = []
     file = Path(__file__).with_name("day_1_input.txt")
@@ -49,5 +51,12 @@ if __name__ == "__main__":
 
     left_list.sort()
     right_list.sort()
-    print(get_total_distance_between_lists(left_list, right_list))
+    print(f"Result: {get_total_distance_between_lists(left_list, right_list)}")
     # Answer: 1879048
+
+    # Memory usage
+    current, peak = tracemalloc.get_traced_memory()
+    print(f"Current memory usage: {current / 1024 / 1024:.1f} MB")
+    print(f"Peak usage: {peak / 1024 / 1024:.1f} MB")
+
+    tracemalloc.stop()

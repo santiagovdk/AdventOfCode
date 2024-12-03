@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="096a31ca-67f0-4cbc-8aa0-e49bedcdc29f" name="Changes" comment="">
+    <list default="true" id="096a31ca-67f0-4cbc-8aa0-e49bedcdc29f" name="Changes" comment="feat: compute total distance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1/day-1-input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day_1/day_1_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_1/lookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_1/lookup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +120,19 @@
       <option name="presentableId" value="Default" />
       <updated>1733225996838</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: compute total distance">
+      <option name="closed" value="true" />
+      <created>1733260508564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733260508564</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: compute total distance" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: compute total distance" />
   </component>
 </project>

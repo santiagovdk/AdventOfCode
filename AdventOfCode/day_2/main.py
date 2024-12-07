@@ -10,27 +10,40 @@ def parse_data_line(line: str) -> t.List[int]:
 
 # The cadence is determine from left to right
 def is_report_safe(report: t.List[int]) -> bool:
-    if is_increasing(report):
+    if is_increasing(report, problem_dampener=True):
         return True
-    elif is_decreasing(report):
+    elif is_decreasing(report, problem_dampener=True):
         return True
     else:
         return False
         # raise ValueError(f"{report} is not increasing or decreasing")
 
 
-def is_increasing(report: t.List[int]) -> bool:
+def is_increasing(report: t.List[int], problem_dampener=False) -> bool:
     i = 0
+    is_problem_dampener_engaged = not problem_dampener
     while i < len(report) - 1:
         current_value = report[i]
         next_value = report[i + 1]
 
-        if next_value <= current_value:
+        try:
+            if next_value <= current_value:
+                raise ValueError(f"Next value is not increasing, {current_value} -> {next_value}")
+                # return False
+            elif abs(current_value - next_value) > 3:
+                raise ValueError(f"Next value is increasing by more than three, {current_value} -> {next_value}")
+                # return False
+            else:
+                i += 1
+        except ValueError as e:
+            print(e)
+            if is_problem_dampener_engaged:
                 return False
-        else:
-            if abs(current_value - next_value) > 3:
-                return False
-            i += 1
+            else:
+                is_problem_dampener_engaged = True
+                i += 1
+                continue
+
     return True
 
 

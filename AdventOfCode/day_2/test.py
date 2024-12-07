@@ -2,23 +2,8 @@ import unittest
 
 from AdventOfCode.day_2.main import is_increasing, is_decreasing, is_report_safe
 
-
-class IncreaseTestCase(unittest.TestCase):
-    def test_returns_true_when_list_is_increasing(self):
-        input_data = [1, 2, 3, 4, 5, 6]
-        result = is_increasing(input_data)
-        assert result == True
-
-    def test_returns_false_when_list_is_not_increasing(self):
-        input_data = [6, 5, 4, 3, 2, 1]
-        result = is_increasing(input_data)
-        assert result == False
-
-        input_data = [1,2,3,10,11,12,13]
-        result = is_increasing(input_data)
-        assert result == False
-
-    def test_returns_true_when_list_has_separation_of_more_than_3_once(self):
+class ProblemDampenerTestCase(unittest.TestCase):
+    def test_returns_true_when_increasing_list_has_separation_of_more_than_3(self):
         input_data = [1, 2, 3, 4, 5, 6, 10]
         result = is_increasing(input_data)
         assert result == True
@@ -71,6 +56,49 @@ class IncreaseTestCase(unittest.TestCase):
         assert result == False
 
 
+class IncreaseTestCase(unittest.TestCase):
+    def test_returns_true_when_list_is_increasing(self):
+        input_data = [1, 2, 3, 4, 5, 6]
+        result = is_increasing(input_data)
+        assert result == True
+
+    def test_returns_false_when_list_is_not_increasing(self):
+        input_data = [6, 5, 4, 3, 2, 1]
+        result = is_increasing(input_data)
+        assert result == False
+
+    def test_returns_false_when_list_is_increasing_by_more_than_3_units(self):
+        # Middle
+        input_data = [1, 2, 3, 4, 11, 5, 6]
+        result = is_increasing(input_data)
+        assert result == False
+
+        # Start
+        input_data = [1, 11, 2, 3, 4, 5]
+        result = is_increasing(input_data)
+        assert result == False
+
+        # End
+        input_data = [1, 2, 3, 4, 5, 6, 12]
+        result = is_increasing(input_data)
+        assert result == False
+
+    def test_returns_false_when_list_is_increasing_by_less_than_1_units(self):
+        # Middle
+        input_data = [1, 2, 3, 4, 5, 5, 6, 7]
+        result = is_decreasing(input_data)
+        assert result == False
+
+        # Start
+        input_data = [1, 1, 2, 3, 4, 5, 6, 7]
+        result = is_decreasing(input_data)
+        assert result == False
+
+        # End
+        input_data = [1, 2, 3, 4, 5, 6, 7, 7]
+        result = is_decreasing(input_data)
+        assert result == False
+
 class DecreaseTestCase(unittest.TestCase):
     def test_returns_true_when_list_is_decreasing(self):
         input_data = [10, 9, 8, 7, 6, 5]
@@ -82,6 +110,39 @@ class DecreaseTestCase(unittest.TestCase):
         result = is_decreasing(input_data)
         assert result == False
 
+    def test_returns_false_when_list_is_decreasing_by_more_than_3_units(self):
+        # Middle
+        input_data = [15, 14, 13, 12, 6, 11, 10, 9]
+        result = is_decreasing(input_data)
+        assert result == False
+
+        # Start
+        input_data = [15, 6, 14, 13, 12, 11, 10]
+        result = is_decreasing(input_data)
+        assert result == False
+
+        # End
+        input_data = [15, 14, 13, 12, 11, 10, 3]
+        result = is_decreasing(input_data)
+        assert result == False
+
+    def test_returns_false_when_list_is_decreasing_by_less_than_1_units(self):
+        # Middle
+        input_data = [15, 14, 13, 12, 11, 11, 10, 9]
+        result = is_decreasing(input_data)
+        assert result == False
+
+        # Start
+        input_data = [15, 15, 14, 13, 12, 11, 10, 9]
+        result = is_decreasing(input_data)
+        assert result == False
+
+        # End
+        input_data = [15, 14, 13, 12, 11, 10, 9, 9]
+        result = is_decreasing(input_data)
+        assert result == False
+
+class DecreaseProblemDampenerTestCase(unittest.TestCase):
     def test_returns_true_when_list_has_separation_of_more_than_3_once(self):
         input_data = [10, 9, 8, 7, 6, 5, 1]
         result = is_decreasing(input_data)

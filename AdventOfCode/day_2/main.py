@@ -8,6 +8,7 @@ def parse_data_line(line: str) -> t.List[int]:
     return [int(number) for number in line.strip().split(SEPARATOR)]
 
 
+# The cadence is determine from left to right
 def is_report_safe(report: t.List[int]) -> bool:
     if is_increasing(report):
         return True

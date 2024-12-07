@@ -16,35 +16,52 @@ def is_report_safe(report: t.List[int]) -> bool:
         return True
     else:
         return False
-        # raise ValueError(f"{report} is not increasing or decreasing")
 
 
 def is_increasing(report: t.List[int], problem_dampener=False) -> bool:
-    i = 0
+    is_safe = True
+
+    current_value_index = 0
+    next_value_index = 1
+
     is_problem_dampener_engaged = not problem_dampener
-    while i < len(report) - 1:
-        current_value = report[i]
-        next_value = report[i + 1]
+    dampening_problem = False
+
+    while current_value_index < len(report) - 1:
+        if problem_dampener is True and next_value_index == len(report) - 1:
+            break
 
         try:
+            current_value = report[current_value_index]
+            next_value = report[next_value_index]
+
             if next_value <= current_value:
                 raise ValueError(f"Next value is not increasing, {current_value} -> {next_value}")
-                # return False
             elif abs(current_value - next_value) > 3:
                 raise ValueError(f"Next value is increasing by more than three, {current_value} -> {next_value}")
-                # return False
+            elif dampening_problem and problem_dampener:
+                # Recently engaged problem dampener
+                current_value_index = next_value_index
+                next_value_index += 1
             else:
-                i += 1
+                # Safe
+                current_value_index += 1
+                next_value_index += 1
         except ValueError as e:
-            print(e)
-            if is_problem_dampener_engaged:
-                return False
-            else:
-                is_problem_dampener_engaged = True
-                i += 1
-                continue
+            if problem_dampener:
+                if is_problem_dampener_engaged:
+                    is_safe = False
+                    break
+                else:
+                    is_problem_dampener_engaged = True
+                    dampening_problem = True
+                    next_value_index += 1
+                    continue
 
-    return True
+            is_safe = False
+            break
+
+    return is_safe
 
 
 def is_decreasing(report: t.List[int]) -> bool:

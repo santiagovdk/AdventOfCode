@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="096a31ca-67f0-4cbc-8aa0-e49bedcdc29f" name="Changes" comment="test(): improve increase and decrease">
+    <list default="true" id="096a31ca-67f0-4cbc-8aa0-e49bedcdc29f" name="Changes" comment="feat(): problem dampener with index issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode/day_2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/day_2/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode/day_2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/day_2/test.py" afterDir="false" />
@@ -49,6 +49,7 @@
     "Python tests.Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_not_increasing.executor": "Run",
     "Python tests.Python tests for test.IncreaseTestCase.test_returns_true_when_list_has_separation_of_more_than_3_once.executor": "Run",
     "Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.executor": "Run",
+    "Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_less_than_1_units_with_problem_dampener.executor": "Run",
     "Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_more_than_3_units_with_problem_dampener.executor": "Run",
     "Python tests.Python tests for test.LookupTestCase.executor": "Run",
     "Python tests.Python tests for test.MyTestCase.executor": "Run",
@@ -73,22 +74,7 @@
       <recent name="$PROJECT_DIR$/day_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_more_than_3_units_with_problem_dampener">
-    <configuration name="Python tests for test.DecreaseTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2024" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.DecreaseTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test.IncreaseTestCase">
     <configuration name="Python tests for test.IncreaseTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2024" />
       <option name="ENV_FILES" value="" />
@@ -104,7 +90,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_increasing_by_less_than_1_units" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_increasing_by_more_than_3_units" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2024" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,7 +101,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.IncreaseTestCase.test_returns_false_when_list_is_increasing_by_less_than_1_units&quot;" />
+      <option name="_new_target" value="&quot;test.IncreaseTestCase.test_returns_false_when_list_is_increasing_by_more_than_3_units&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -131,6 +117,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.IncreaseWithProblemDampenerTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_less_than_1_units_with_problem_dampener" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2024" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_less_than_1_units_with_problem_dampener&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -151,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_more_than_3_units_with_problem_dampener" />
-        <item itemvalue="Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase" />
-        <item itemvalue="Python tests.Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_increasing_by_less_than_1_units" />
         <item itemvalue="Python tests.Python tests for test.IncreaseTestCase" />
-        <item itemvalue="Python tests.Python tests for test.DecreaseTestCase" />
+        <item itemvalue="Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase" />
+        <item itemvalue="Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_less_than_1_units_with_problem_dampener" />
+        <item itemvalue="Python tests.Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_increasing_by_more_than_3_units" />
+        <item itemvalue="Python tests.Python tests for test.IncreaseWithProblemDampenerTestCase.test_returns_true_when_list_is_increasing_by_more_than_3_units_with_problem_dampener" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733559586486</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(): problem dampener with index issues">
+      <option name="closed" value="true" />
+      <created>1733560670847</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733560670847</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -242,6 +251,7 @@
     <MESSAGE value="chore(): fix folder structure" />
     <MESSAGE value="feat(): increaser and decreaser without problem dampener" />
     <MESSAGE value="test(): improve increase and decrease" />
-    <option name="LAST_COMMIT_MESSAGE" value="test(): improve increase and decrease" />
+    <MESSAGE value="feat(): problem dampener with index issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(): problem dampener with index issues" />
   </component>
 </project>

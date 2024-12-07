@@ -121,8 +121,6 @@ class DecreaseTestCase(unittest.TestCase):
         result = is_decreasing(input_data)
         assert result == False
 
-
-
 class CheckSafeTestCase(unittest.TestCase):
     def test_unsafe_report_is_marked_as_unsafe(self):
         report = [1, 2, 7, 8, 9]

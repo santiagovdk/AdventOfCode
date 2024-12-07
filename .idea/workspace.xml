@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="096a31ca-67f0-4cbc-8aa0-e49bedcdc29f" name="Changes" comment="feat: include memory usage metrics">
-      <change afterPath="$PROJECT_DIR$/AdventOfCode/day_1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode/day_2/__init__.py" afterDir="false" />
+    <list default="true" id="096a31ca-67f0-4cbc-8aa0-e49bedcdc29f" name="Changes" comment="chore(): fix folder structure">
+      <change afterPath="$PROJECT_DIR$/AdventOfCode/day_2/data_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode/day_2/data_input_test.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AdventOfCode/day_2/main.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AdventOfCode/day_2/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1/day_1_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/data_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1/day_1_input_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/data_input_test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1/lookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/day_1/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day_1/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode/day_1/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,58 +27,138 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2phl4R6bleFyZyBFGevOiEsVoqO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test-lookup.LookupTest (1).executor": "Run",
-    "Python tests.Python tests for test-lookup.LookupTest.test_get_smallest_number.executor": "Run",
-    "Python tests.Python tests for test.LookupTestCase.executor": "Run",
-    "Python tests.Python tests for test.MyTestCase.executor": "Run",
-    "Python tests.Python tests in /Users/vdek/source/repo/AdventOfCode2024/day_1/test_lookup.py.executor": "Run",
-    "Python tests.Python tests in test_lookup.py.executor": "Run",
-    "Python.day-1.executor": "Run",
-    "Python.lookup.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test-lookup.LookupTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test-lookup.LookupTest.test_get_smallest_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.CheckSafeTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.DecreaseTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.IncreaseTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.IncreaseTestCase.test_returns_false_when_list_has_separation_of_more_than_3_more_once.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_not_increasing.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.IncreaseTestCase.test_returns_true_when_list_has_separation_of_more_than_3_once.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.LookupTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test.SortingTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in /Users/vdek/source/repo/AdventOfCode2024/day_1/test_lookup.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_lookup.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.day-1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lookup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AdventOfCode/day_1" />
       <recent name="$PROJECT_DIR$/AdventOfCode" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/day_1" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Python tests for test.LookupTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2024" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AdventOfCode/day_2/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.CheckSafeTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2024" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.LookupTestCase&quot;" />
+      <option name="_new_target" value="&quot;test.CheckSafeTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.IncreaseTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2024" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.IncreaseTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_not_increasing" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2024" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.IncreaseTestCase.test_returns_false_when_list_is_not_increasing&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2024" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode/day_2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/AdventOfCode/day_2/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test.LookupTestCase" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests in test.py" />
+        <item itemvalue="Python tests.Python tests for test.IncreaseTestCase" />
+        <item itemvalue="Python tests.Python tests for test.IncreaseTestCase.test_returns_false_when_list_is_not_increasing" />
+        <item itemvalue="Python tests.Python tests for test.CheckSafeTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -119,12 +194,39 @@
       <option name="project" value="LOCAL" />
       <updated>1733260824851</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore(): refactor day 1">
+      <option name="closed" value="true" />
+      <created>1733262790149</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733262790149</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(): day 2">
+      <option name="closed" value="true" />
+      <created>1733262799105</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733262799105</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore(): fix folder structure">
+      <option name="closed" value="true" />
+      <created>1733263005145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733263005145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: compute total distance" />
     <MESSAGE value="feat: include memory usage metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: include memory usage metrics" />
+    <MESSAGE value="chore(): refactor day 1" />
+    <MESSAGE value="feat(): day 2" />
+    <MESSAGE value="chore(): fix folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(): fix folder structure" />
   </component>
 </project>
